@@ -1,3 +1,5 @@
 language: java
+    exclude: 
+           -ant
 after_success:
   - mvn clean cobertura:cobertura coveralls:report
